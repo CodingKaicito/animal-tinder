@@ -1,0 +1,46 @@
+* { 
+    background-color: #ffffff;
+    box-sizing: border-box;
+    scroll-padding-top: 100px; /* Added here */
+}
+
+body {
+    padding-top: 60px; /* Adjust to match your navbar's height */
+}
+
+a:link {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+      z-index: 1000; /* Ensures navbar is always on top */
+    text-align: center;
+}
+
+nav.sticky {
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+nav .nav_content {
+    height: auto; /* Adjust height dynamically */
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensure vertical alignment of content */
+}
+
+    nav .nav_content .logo {
+    font-family: LuckiestGuyFont;
+      font-size: clamp(24px, 5vw, 25px); /* Minimum 24px, adjusts with viewport width, max 25px */
+    color: #000000;
+}
